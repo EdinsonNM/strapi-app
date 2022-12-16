@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "planes",
+  "info": {
+    "singularName": "plan",
+    "pluralName": "planes",
+    "displayName": "Plan de estudio",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Plan": {
+      "type": "string"
+    },
+    "anio": {
+      "type": "integer"
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "planPDF": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "programas_de_estudio": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::programa.programa",
+      "inversedBy": "plan_de_estudios"
+    }
+  }
+}

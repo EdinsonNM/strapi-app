@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programas",
+  "info": {
+    "singularName": "programa",
+    "pluralName": "programas",
+    "displayName": "Programas de Estudio"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombrePrograma": {
+      "type": "text"
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "diseno_curriculars": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::diseno.diseno",
+      "mappedBy": "programas_de_estudio"
+    },
+    "perfil_ingreso_egresos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::perfil.perfil",
+      "mappedBy": "programas_de_estudio"
+    },
+    "plan_de_estudios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::plan.plan",
+      "mappedBy": "programas_de_estudio"
+    }
+  }
+}
