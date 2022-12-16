@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "demos",
+  "collectionName": "publications",
   "info": {
-    "singularName": "demo",
-    "pluralName": "demos",
-    "displayName": "paginas",
-    "description": ""
+    "singularName": "publication",
+    "pluralName": "publications",
+    "displayName": "Publicación"
   },
   "options": {
     "draftAndPublish": true
@@ -15,22 +14,24 @@
     "title": {
       "type": "string"
     },
-    "email": {
-      "type": "email"
+    "subtitle": {
+      "type": "text"
     },
     "description": {
       "type": "richtext"
     },
-    "icon": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
+    "publishAt": {
+      "type": "date"
+    },
+    "images": {
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
