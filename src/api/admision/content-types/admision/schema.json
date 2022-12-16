@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "admisions",
+  "info": {
+    "singularName": "admision",
+    "pluralName": "admisions",
+    "displayName": "Admisión"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombreAdmision": {
+      "type": "string"
+    },
+    "periodo": {
+      "type": "integer"
+    },
+    "Ciclo": {
+      "type": "enumeration",
+      "enum": [
+        "VERANO",
+        "I SEMESTRE",
+        "II SEMESTRE"
+      ]
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "modalidad_de_ingresos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::modalidad.modalidad",
+      "mappedBy": "admision"
+    },
+    "requisitos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::requisito.requisito",
+      "mappedBy": "admision"
+    },
+    "costos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::costo.costo",
+      "mappedBy": "admision"
+    },
+    "convalidacions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::convalidacion.convalidacion",
+      "mappedBy": "admision"
+    },
+    "cronogramas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cronograma.cronograma",
+      "mappedBy": "admision"
+    },
+    "resultados": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::resultado.resultado",
+      "mappedBy": "admision"
+    }
+  }
+}

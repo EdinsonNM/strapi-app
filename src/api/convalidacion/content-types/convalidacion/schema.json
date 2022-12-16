@@ -1,23 +1,23 @@
 {
   "kind": "collectionType",
-  "collectionName": "requisitos",
+  "collectionName": "convalidacions",
   "info": {
-    "singularName": "requisito",
-    "pluralName": "requisitos",
-    "displayName": "Requisito"
+    "singularName": "convalidacion",
+    "pluralName": "convalidacions",
+    "displayName": "Convalidacion"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "nombreRequisito": {
-      "type": "text"
+    "nombreConvalidacion": {
+      "type": "string"
     },
     "descripcion": {
       "type": "richtext"
     },
-    "mediaRequisito": {
+    "mediaConvalidacion": {
       "allowedTypes": [
         "images",
         "files"
@@ -29,13 +29,7 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::admision.admision",
-      "inversedBy": "requisitos"
-    },
-    "matricula": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::matricula.matricula",
-      "inversedBy": "requisitos"
+      "inversedBy": "convalidacions"
     }
   }
 }

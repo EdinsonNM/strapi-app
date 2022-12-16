@@ -19,6 +19,18 @@
     },
     "importe": {
       "type": "decimal"
+    },
+    "admision": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::admision.admision",
+      "inversedBy": "costos"
+    },
+    "matricula": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::matricula.matricula",
+      "inversedBy": "costos"
     }
   }
 }

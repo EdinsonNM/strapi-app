@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modalidades",
+  "info": {
+    "singularName": "modalidad",
+    "pluralName": "modalidades",
+    "displayName": "Modalidad de Ingreso"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombreModalidad": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "admision": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::admision.admision",
+      "inversedBy": "modalidad_de_ingresos"
+    }
+  }
+}

@@ -22,6 +22,18 @@
       "relation": "oneToMany",
       "target": "api::detalle-cronograma.detalle-cronograma",
       "mappedBy": "cronograma"
+    },
+    "admision": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::admision.admision",
+      "inversedBy": "cronogramas"
+    },
+    "matricula": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::matricula.matricula",
+      "inversedBy": "cronogramas"
     }
   }
 }
