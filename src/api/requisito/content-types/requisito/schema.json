@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "requisitos",
+  "info": {
+    "singularName": "requisito",
+    "pluralName": "requisitos",
+    "displayName": "Requisito"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombreRequisito": {
+      "type": "text"
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "mediaRequisito": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

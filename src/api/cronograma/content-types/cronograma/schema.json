@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cronogramas",
+  "info": {
+    "singularName": "cronograma",
+    "pluralName": "cronogramas",
+    "displayName": "Cronograma"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombreCronograma": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "detalle_cronogramas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::detalle-cronograma.detalle-cronograma",
+      "mappedBy": "cronograma"
+    }
+  }
+}

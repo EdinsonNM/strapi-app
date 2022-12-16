@@ -4,7 +4,7 @@
   "info": {
     "singularName": "plan",
     "pluralName": "planes",
-    "displayName": "Plan de estudio",
+    "displayName": "Plan de Estudio",
     "description": ""
   },
   "options": {
@@ -22,11 +22,12 @@
       "type": "richtext"
     },
     "planPDF": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "programas_de_estudio": {
       "type": "relation",

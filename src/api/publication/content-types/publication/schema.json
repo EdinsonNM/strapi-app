@@ -4,7 +4,8 @@
   "info": {
     "singularName": "publication",
     "pluralName": "publications",
-    "displayName": "Publicación"
+    "displayName": "Publicación",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,14 +25,15 @@
       "type": "date"
     },
     "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }

@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "detalle_cronogramas",
+  "info": {
+    "singularName": "detalle-cronograma",
+    "pluralName": "detalle-cronogramas",
+    "displayName": "Detalles de Cronograma",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombreDetalle": {
+      "type": "string"
+    },
+    "fechaDetalleCronograma": {
+      "type": "date"
+    },
+    "cronograma": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::cronograma.cronograma",
+      "inversedBy": "detalle_cronogramas"
+    }
+  }
+}

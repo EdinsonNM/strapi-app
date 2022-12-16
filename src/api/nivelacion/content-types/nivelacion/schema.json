@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nivelaciones",
+  "info": {
+    "singularName": "nivelacion",
+    "pluralName": "nivelaciones",
+    "displayName": "Servicio Educativo de Nivelación Acacémica"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombreNivelacion": {
+      "type": "string"
+    },
+    "informacionBasica": {
+      "type": "richtext"
+    }
+  }
+}
