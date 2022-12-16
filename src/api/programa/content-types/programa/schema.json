@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programas",
+  "info": {
+    "singularName": "programa",
+    "pluralName": "programas",
+    "displayName": "programas"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "landing": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::landing.landing",
+      "inversedBy": "programas"
+    }
+  }
+}

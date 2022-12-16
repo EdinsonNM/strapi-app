@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "egresados",
+  "info": {
+    "singularName": "egresado",
+    "pluralName": "egresados",
+    "displayName": "egresados"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "uid"
+    },
+    "dni": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "minLength": 8,
+      "maxLength": 8
+    },
+    "nombres": {
+      "type": "string"
+    },
+    "apePaterno": {
+      "type": "string"
+    },
+    "apeMaterno": {
+      "type": "string"
+    },
+    "sexo": {
+      "type": "enumeration",
+      "enum": [
+        "Masculino",
+        "Femenino"
+      ]
+    },
+    "anioIngreso": {
+      "type": "string"
+    },
+    "anioEgreso": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "FecNacimiento": {
+      "type": "date"
+    }
+  }
+}
