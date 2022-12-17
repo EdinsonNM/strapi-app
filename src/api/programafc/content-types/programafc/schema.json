@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programasfc",
+  "info": {
+    "singularName": "programafc",
+    "pluralName": "programasfc",
+    "displayName": "Programas de Formaciòn Continua"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombreProgramaFC": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "requisitos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::requisito.requisito",
+      "mappedBy": "programas_de_formacion_continua"
+    },
+    "modalidad_de_ingresos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::modalidad.modalidad",
+      "mappedBy": "programas_de_formacion_continua"
+    },
+    "plan_de_estudios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::plan.plan",
+      "mappedBy": "programas_de_formacion_continua"
+    }
+  }
+}

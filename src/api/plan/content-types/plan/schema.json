@@ -34,6 +34,12 @@
       "relation": "manyToOne",
       "target": "api::programa.programa",
       "inversedBy": "plan_de_estudios"
+    },
+    "programas_de_formacion_continua": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::programafc.programafc",
+      "inversedBy": "plan_de_estudios"
     }
   }
 }

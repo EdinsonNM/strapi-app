@@ -36,6 +36,12 @@
       "relation": "manyToOne",
       "target": "api::matricula.matricula",
       "inversedBy": "requisitos"
+    },
+    "programas_de_formacion_continua": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::programafc.programafc",
+      "inversedBy": "requisitos"
     }
   }
 }

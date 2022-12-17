@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tests",
+  "info": {
+    "singularName": "test",
+    "pluralName": "tests",
+    "displayName": "Test Vocacional"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombreTest": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "orientacion": {
+      "type": "string"
+    },
+    "Block": {
+      "type": "string"
+    },
+    "resultados": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::resultado.resultado",
+      "mappedBy": "test_vocacional"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tramites",
+  "info": {
+    "singularName": "tramite",
+    "pluralName": "tramites",
+    "displayName": "Tramites"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombreTramite": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "mediaTramite": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

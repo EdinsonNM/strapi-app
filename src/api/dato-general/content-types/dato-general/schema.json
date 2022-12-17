@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "datos_generales",
+  "info": {
+    "singularName": "dato-general",
+    "pluralName": "datos-generales",
+    "displayName": "Datos Generales"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Mision": {
+      "type": "text"
+    },
+    "Vision": {
+      "type": "text"
+    },
+    "Historia": {
+      "type": "richtext"
+    },
+    "Objetivos": {
+      "type": "richtext"
+    },
+    "resolucionCreacion": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "resolucionRevalidacion": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Organigrama": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "Youtube": {
+      "type": "string"
+    }
+  }
+}

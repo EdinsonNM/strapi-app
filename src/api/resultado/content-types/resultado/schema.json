@@ -30,6 +30,18 @@
       "relation": "manyToOne",
       "target": "api::admision.admision",
       "inversedBy": "resultados"
+    },
+    "convocatoria_docente": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::convocatoria.convocatoria",
+      "inversedBy": "resultados"
+    },
+    "test_vocacional": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::test.test",
+      "inversedBy": "resultados"
     }
   }
 }

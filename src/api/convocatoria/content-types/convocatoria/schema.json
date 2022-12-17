@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "convocatorias",
+  "info": {
+    "singularName": "convocatoria",
+    "pluralName": "convocatorias",
+    "displayName": "Convocatoria Docentes"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombreConvocatoria": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "Plazas": {
+      "type": "integer"
+    },
+    "resultados": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::resultado.resultado",
+      "mappedBy": "convocatoria_docente"
+    }
+  }
+}

@@ -22,6 +22,12 @@
       "relation": "manyToOne",
       "target": "api::admision.admision",
       "inversedBy": "modalidad_de_ingresos"
+    },
+    "programas_de_formacion_continua": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::programafc.programafc",
+      "inversedBy": "modalidad_de_ingresos"
     }
   }
 }
