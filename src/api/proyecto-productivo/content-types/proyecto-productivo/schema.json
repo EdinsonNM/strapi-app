@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proyecto_productivos",
+  "info": {
+    "singularName": "proyecto-productivo",
+    "pluralName": "proyecto-productivos",
+    "displayName": "Proyectos Productivos",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombreProyectoProductivo": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "costo": {
+      "type": "decimal"
+    }
+  }
+}

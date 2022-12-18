@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "centros",
+  "info": {
+    "singularName": "centro",
+    "pluralName": "centros",
+    "displayName": "Centro de Aplicación"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombreCentroAplicacion": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "richtext"
+    },
+    "convenios": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::convenio.convenio",
+      "mappedBy": "centro_de_aplicacion"
+    }
+  }
+}
