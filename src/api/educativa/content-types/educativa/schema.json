@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "educativas",
+  "info": {
+    "singularName": "educativa",
+    "pluralName": "educativas",
+    "displayName": "Informacion educativa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Grado": {
+      "type": "enumeration",
+      "enum": [
+        "Bachiller",
+        "Superior Pedagógica",
+        "superior Tecnológica",
+        "Licenciatura",
+        "Maestría",
+        "Doctorado",
+        "Segunda Especialidad",
+        "Diplomado",
+        "Taller Curso Virtual"
+      ]
+    },
+    "documentos": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "mencion": {
+      "type": "string"
+    },
+    "institucionEstudios": {
+      "type": "string"
+    },
+    "horas": {
+      "type": "integer"
+    },
+    "anioInicio": {
+      "type": "integer"
+    },
+    "anioFin": {
+      "type": "integer"
+    },
+    "periodo": {
+      "type": "integer"
+    },
+    "egresado": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::egresado.egresado",
+      "inversedBy": "informacion_educativas"
+    }
+  }
+}

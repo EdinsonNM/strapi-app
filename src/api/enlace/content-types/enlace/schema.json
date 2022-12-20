@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "enlaces",
+  "info": {
+    "singularName": "enlace",
+    "pluralName": "enlaces",
+    "displayName": "enlace"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombreEnlace": {
+      "type": "string"
+    },
+    "imagenEnlace": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "private": true
+    },
+    "vinculo": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "laborals",
+  "info": {
+    "singularName": "laboral",
+    "pluralName": "laborals",
+    "displayName": "Complementar Información Laboral"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "institucion": {
+      "type": "string"
+    },
+    "anioInicio": {
+      "type": "integer"
+    },
+    "anioFin": {
+      "type": "integer"
+    },
+    "cargo": {
+      "type": "string"
+    },
+    "egresado": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::egresado.egresado",
+      "inversedBy": "complementar_informacion_laborals"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "titulos",
+  "info": {
+    "singularName": "titulo",
+    "pluralName": "titulos",
+    "displayName": "Titulo Profesional"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "numero": {
+      "type": "string"
+    },
+    "nombreTitulo": {
+      "type": "string"
+    },
+    "fechaEmision": {
+      "type": "date"
+    },
+    "periodo": {
+      "type": "integer"
+    },
+    "egresado": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::egresado.egresado",
+      "inversedBy": "titulo_profesionals"
+    }
+  }
+}
