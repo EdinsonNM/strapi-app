@@ -1,10 +1,11 @@
 {
-  "kind": "collectionType",
+  "kind": "singleType",
   "collectionName": "datos_generales",
   "info": {
     "singularName": "dato-general",
     "pluralName": "datos-generales",
-    "displayName": "Datos Generales"
+    "displayName": "Datos Generales",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,26 +25,29 @@
       "type": "richtext"
     },
     "resolucionCreacion": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "resolucionRevalidacion": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "Organigrama": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "facebook": {
       "type": "string"
