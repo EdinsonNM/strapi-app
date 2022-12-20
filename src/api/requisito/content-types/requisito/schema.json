@@ -42,6 +42,12 @@
       "relation": "manyToOne",
       "target": "api::programafc.programafc",
       "inversedBy": "requisitos"
+    },
+    "servicio_educativo_de_nivelacion_acacemica": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::nivelacion.nivelacion",
+      "inversedBy": "requisitos"
     }
   }
 }

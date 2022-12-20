@@ -34,6 +34,12 @@
       "relation": "oneToMany",
       "target": "api::plan.plan",
       "mappedBy": "programas_de_estudio"
+    },
+    "egresado": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::egresado.egresado",
+      "inversedBy": "programas_de_estudios"
     }
   }
 }

@@ -15,7 +15,7 @@
     "nombreDetalle": {
       "type": "string"
     },
-    "fechaDetalleCronograma": {
+    "fechaInicio": {
       "type": "date"
     },
     "cronograma": {
@@ -23,6 +23,9 @@
       "relation": "manyToOne",
       "target": "api::cronograma.cronograma",
       "inversedBy": "detalle_cronogramas"
+    },
+    "fechaFin": {
+      "type": "date"
     }
   }
 }

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "oportunidades",
+  "info": {
+    "singularName": "oportunidad",
+    "pluralName": "oportunidades",
+    "displayName": "Bolsa de Trabajo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "oportunidad": {
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "richtext"
+    }
+  }
+}

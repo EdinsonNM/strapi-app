@@ -1,0 +1,9 @@
+'use strict';
+
+/**
+ * laboral service
+ */
+
+const { createCoreService } = require('@strapi/strapi').factories;
+
+module.exports = createCoreService('api::laboral.laboral');
