@@ -4,7 +4,8 @@
   "info": {
     "singularName": "nivelacion",
     "pluralName": "nivelaciones",
-    "displayName": "Servicio Educativo de Nivelación Acacémica"
+    "displayName": "Servicio Educativo de Nivelación Acacémica",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,18 @@
     },
     "informacionBasica": {
       "type": "richtext"
+    },
+    "requisitos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::requisito.requisito",
+      "mappedBy": "servicio_educativo_de_nivelacion_acacemica"
+    },
+    "cronogramas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cronograma.cronograma",
+      "mappedBy": "servicio_educativo_de_nivelacion_acacemica"
     }
   }
 }

@@ -34,6 +34,12 @@
       "relation": "manyToOne",
       "target": "api::matricula.matricula",
       "inversedBy": "cronogramas"
+    },
+    "servicio_educativo_de_nivelacion_acacemica": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::nivelacion.nivelacion",
+      "inversedBy": "cronogramas"
     }
   }
 }
