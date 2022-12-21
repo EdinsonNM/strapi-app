@@ -35,11 +35,11 @@
       "target": "api::plan.plan",
       "mappedBy": "programas_de_estudio"
     },
-    "egresado": {
+    "egresados": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToMany",
       "target": "api::egresado.egresado",
-      "inversedBy": "programas_de_estudios"
+      "mappedBy": "programas_de_estudio"
     }
   }
 }

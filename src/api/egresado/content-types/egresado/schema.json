@@ -3883,11 +3883,11 @@
         "Zurite"
       ]
     },
-    "programas_de_estudios": {
+    "programas_de_estudio": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::programa.programa",
-      "mappedBy": "egresado"
+      "inversedBy": "egresados"
     },
     "anioInicio": {
       "type": "integer"
