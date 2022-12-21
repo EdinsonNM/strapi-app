@@ -3887,7 +3887,7 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::programa.programa",
-      "inversedBy": "egresados"
+      "inversedBy": "nombre"
     },
     "anioInicio": {
       "type": "integer"

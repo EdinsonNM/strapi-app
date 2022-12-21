@@ -18,14 +18,14 @@
     "fechaInicio": {
       "type": "date"
     },
+    "fechaFin": {
+      "type": "date"
+    },
     "cronograma": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::cronograma.cronograma",
       "inversedBy": "detalle_cronogramas"
-    },
-    "fechaFin": {
-      "type": "date"
     }
   }
 }

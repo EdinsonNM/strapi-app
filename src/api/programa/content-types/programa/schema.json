@@ -4,7 +4,8 @@
   "info": {
     "singularName": "programa",
     "pluralName": "programas",
-    "displayName": "Programas de Estudio"
+    "displayName": "Programas de Estudio",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -35,7 +36,7 @@
       "target": "api::plan.plan",
       "mappedBy": "programas_de_estudio"
     },
-    "egresados": {
+    "nombre": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::egresado.egresado",

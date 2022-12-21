@@ -4,7 +4,8 @@
   "info": {
     "singularName": "cronograma",
     "pluralName": "cronogramas",
-    "displayName": "Cronograma"
+    "displayName": "Cronograma",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,12 +17,6 @@
     },
     "descripcion": {
       "type": "richtext"
-    },
-    "detalle_cronogramas": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::detalle-cronograma.detalle-cronograma",
-      "mappedBy": "cronograma"
     },
     "admision": {
       "type": "relation",
@@ -40,6 +35,12 @@
       "relation": "manyToOne",
       "target": "api::nivelacion.nivelacion",
       "inversedBy": "cronogramas"
+    },
+    "detalle_cronogramas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::detalle-cronograma.detalle-cronograma",
+      "mappedBy": "cronograma"
     }
   }
 }
