@@ -3883,12 +3883,6 @@
         "Zurite"
       ]
     },
-    "programas_de_estudio": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::programa.programa",
-      "inversedBy": "nombre"
-    },
     "anioInicio": {
       "type": "integer"
     },
@@ -3926,6 +3920,12 @@
       "relation": "oneToMany",
       "target": "api::laboral.laboral",
       "mappedBy": "egresado"
+    },
+    "programas_de_estudio": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::programa.programa",
+      "inversedBy": "egresados"
     }
   }
 }

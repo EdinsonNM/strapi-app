@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "nombrePrograma": {
-      "type": "text"
-    },
     "descripcion": {
       "type": "richtext"
     },
@@ -36,7 +33,10 @@
       "target": "api::plan.plan",
       "mappedBy": "programas_de_estudio"
     },
-    "nombre": {
+    "nombrePrograma": {
+      "type": "string"
+    },
+    "egresados": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::egresado.egresado",
